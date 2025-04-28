@@ -1,4 +1,4 @@
-package lectureTwo;
+package lectureTwo.animals;
 
 public class Bird implements Animal {
     String name;

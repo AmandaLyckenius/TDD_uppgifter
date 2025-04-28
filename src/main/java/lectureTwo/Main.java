@@ -1,5 +1,10 @@
 package lectureTwo;
 
+import lectureTwo.ItemAndDiscount.*;
+import lectureTwo.animals.Animal;
+import lectureTwo.animals.Bird;
+import lectureTwo.animals.Dog;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +15,8 @@ public class Main {
         Item itemOne = new Item("Laptop", 1000.00, 1);
         Item itemTwo = new Item("Phone", 500.00, 2);
         DiscountService discountService = new DiscountService();
+        Discount discount10 = new TenPercentDiscount();
+        Discount discount25 = new TwentyFivePercentDiscount();
 
         //totalt innan discount
         double itemOneTotal = itemOne.calculateTotal();
@@ -26,6 +33,14 @@ public class Main {
         double totalAfterDiscount = discountService.calculatePriceAfterDiscount(totalAmount, discountPercent);
         System.out.println("Total amount after discount: " + totalAfterDiscount);
 
+
+        //Using tenPercentDiscount
+        double totalAfter10PercentDiscount = discount10.applyDiscount(totalAmount);
+        System.out.println("Total after 10% discount: " + totalAfter10PercentDiscount);
+
+        //using twentyFivePercentDiscount
+        double totalAfter25PercentDiscount = discount25.applyDiscount(totalAmount);
+        System.out.println("Total after 25% discount: " + totalAfter25PercentDiscount);
 
 
         //EXAMPLE TWO

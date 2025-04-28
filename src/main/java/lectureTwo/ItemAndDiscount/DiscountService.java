@@ -1,4 +1,4 @@
-package lectureTwo;
+package lectureTwo.ItemAndDiscount;
 
 public class DiscountService {
 
