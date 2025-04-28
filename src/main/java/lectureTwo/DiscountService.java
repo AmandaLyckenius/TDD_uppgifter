@@ -1,3 +1,5 @@
+package lectureTwo;
+
 public class DiscountService {
 
    public double calculateDiscountAmount(double totalPrice, double discountPercent) {

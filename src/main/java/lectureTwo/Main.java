@@ -1,4 +1,11 @@
+package lectureTwo;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
+
+
     public static void main(String[] args) {
         Item itemOne = new Item("Laptop", 1000.00, 1);
         Item itemTwo = new Item("Phone", 500.00, 2);
@@ -18,6 +25,22 @@ public class Main {
         //Total after discount
         double totalAfterDiscount = discountService.calculatePriceAfterDiscount(totalAmount, discountPercent);
         System.out.println("Total amount after discount: " + totalAfterDiscount);
+
+
+
+        //EXAMPLE TWO
+
+        List<Bird> Bird = new ArrayList();
+
+        Dog dog = new Dog("Bodil", 2);
+        Bird bird = new Bird("Kråkan", 5);
+
+      //  Bird.add(dog); Does not work
+
+        List <Animal> Animals = new ArrayList<>();
+
+        Animals.add(dog);
+        Animals.add(bird);
 
 
 
